@@ -11,3 +11,10 @@ $(function() {
     edit.innerHTML = localStorage.getItem('todoData');
   }
 });
+
+
+if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+} else {
+  // Sorry! No Web Storage support..
+}
