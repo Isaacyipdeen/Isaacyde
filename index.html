@@ -27,7 +27,7 @@
     </header>
     <body>
       <div class="container">
-        <iframe width="1000" height="345" src="https://www.youtube.com/embed/gxf_zRr-UQ8?autoplay=1&mute=1&enablejsapi=1" frameborder="0" allow="autoplay">
+        <iframe id="conny" width="1000" height="345" src="https://www.youtube.com/embed/gxf_zRr-UQ8?autoplay=1&enablejsapi=1" frameborder="0" allow="autoplay">
         </iframe>
       </div>
     </body>
@@ -98,6 +98,30 @@
 <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
 
 </body>
+<script type="text/javascript">
+	if (/chrome/i.test(navigator.userAgent)){
+		var ID = 'conny';
+
+		document.getElementById(ID).onload= function() {
+			//taken from youtube embed js api example
+			var tag = document.createElement('script');
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		};
+		var Player;
+		function onYouTubeIframeAPIReady() {
+			Player = new YT.Player(ID, {
+				events: {
+					'onReady': AutoPlayWorkaround
+				}
+			});
+		}
+		function AutoPlayWorkaround(Event) {
+			Event.target.playVideo();
+		}
+	}
+</script>
 
     <footer>
 
