@@ -9,29 +9,6 @@
     <title>Isaac's waifus | Welcome</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <script type="text/javascript">
-  		var ID = 'conny';
-
-  		document.getElementById(ID).onload= function() {
-  			//taken from youtube embed js api example
-  			var tag = document.createElement('script');
-  			tag.src = "https://www.youtube.com/iframe_api";
-  			var firstScriptTag = document.getElementsByTagName('script')[0];
-  			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  		};
-  		var Player;
-  		function onYouTubeIframeAPIReady() {
-  			Player = new YT.Player(ID, {
-  				events: {
-  					'onReady': AutoPlayWorkaround
-  				}
-  			});
-  		}
-  		function AutoPlayWorkaround(Event) {
-  			Event.target.playVideo();
-  		}
-  	
-  </script>
   <body>
     <header>
       <div class="container">
@@ -47,8 +24,8 @@
       </div>
     </header>
     <body>
-      <div class="container">
-        <iframe id="conny" width="1000" height="345" src="https://www.youtube.com/embed/gxf_zRr-UQ8?autoplay=1&enablejsapi=1" frameborder="0" allow="autoplay">
+      <div class="resp-container">
+        <iframe class="resp-iframe" src="https://www.youtube.com/embed/gxf_zRr-UQ8?autoplay=1&enablejsapi=1" frameborder="0" allow="autoplay">
         </iframe>
       </div>
     </body>
