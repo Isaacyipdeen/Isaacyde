@@ -10,7 +10,7 @@ body {
   display: grid;
   overflow: hidden;
   place-items: center;
-  background: linear-gradient(-45deg, #c4d2ef, #dfe6f6);
+  background: linear-gradient(-45deg, black, black);
 }
 .hr,
 .min,
@@ -27,7 +27,7 @@ body {
   height: 8vmin;
   display: grid;
   place-items: center;
-  color: #f9fbfd;
+  color: #00ff00;
   transition: all 500ms 100ms ease;
   border-radius: 50%;
 }
