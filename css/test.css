@@ -6,11 +6,11 @@
 body {
   font-family: monospace;
   font-size: 4vmin;
-  min-height: 70vh;
+  min-height: 110vh;
   display: grid;
   overflow: hidden;
   place-items: center;
-  background: linear-gradient(-45deg, black, black);
+  background: black;
 }
 .hr,
 .min,
