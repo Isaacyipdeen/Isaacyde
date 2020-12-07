@@ -6,7 +6,7 @@
 body {
   font-family: monospace;
   font-size: 4vmin;
-  min-height: 100vh;
+  min-height: 70vh;
   display: grid;
   overflow: hidden;
   place-items: center;
