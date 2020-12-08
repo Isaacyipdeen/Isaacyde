@@ -8,9 +8,9 @@ body {
   font-size: 4vmin;
   min-height: 100vh;
   display: grid;
-  overflow: scroll;
-  place-items: right;
-  background: black;
+  overflow: hidden;
+  place-items: center;
+  background: linear-gradient(-45deg, #c4d2ef, #dfe6f6);
 }
 .hr,
 .min,
@@ -27,7 +27,7 @@ body {
   height: 8vmin;
   display: grid;
   place-items: center;
-  color: #00ff00;
+  color: #f9fbfd;
   transition: all 500ms 100ms ease;
   border-radius: 50%;
 }
@@ -50,8 +50,9 @@ body {
   grid-gap: 8vmin;
   height: 4vmin;
   position: relative;
-  padding: 0 8vmin;
+  padding: 0 4vmin;
 }
+
 
 
     .marquee {
