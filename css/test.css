@@ -3,12 +3,17 @@
   padding: 0;
   margin: 0;
 }
+
+ul{
+  margin:10;
+  padding:10;
+}
 body {
   font-family: monospace;
   font-size: 4vmin;
   min-height: 80vh;
   display: grid;
-  overflow: auto;
+  overflow: scroll;
   place-items: center;
   background: linear-gradient(-45deg, #c4d2ef, #dfe6f6);
 }
@@ -72,4 +77,12 @@ line-height: 50px;
 @keyframes marquee {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
 }
