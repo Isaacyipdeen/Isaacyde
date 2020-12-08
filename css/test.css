@@ -6,9 +6,9 @@
 body {
   font-family: monospace;
   font-size: 4vmin;
-  min-height: 10vh;
+  min-height: 80vh;
   display: grid;
-  overflow: hidden;
+  overflow: auto;
   place-items: center;
   background: linear-gradient(-45deg, #c4d2ef, #dfe6f6);
 }
