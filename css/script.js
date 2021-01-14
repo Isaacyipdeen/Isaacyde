@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kakeguruimashou and Gambling">
-    <meta name="keywords" content="Kakeguruimashou">
-    <meta name="author" content="Isaac Yip">
-    <title>CCRT CMS | Log In</title>
-    <link rel="stylesheet" href="./css/test1.css">
-
-  </head>
-
-
-  <!-- check the Comments for more info -->
-
-  <body class="back-row-toggle splat-toggle">
-    <div class="rain front-row"></div>
-    <div class="rain back-row"></div>
-    <div class="toggles">
-      <div class="splat-toggle toggle active">SPLAT</div>
-      <div class="back-row-toggle toggle active">BACK<br>ROW</div>
-      <div class="single-toggle toggle">SINGLE</div>
-    </div>
-  </body>
-
-<script>
 var makeItRain = function () {
   //clear out everything
   $(".rain").empty();
@@ -103,6 +76,3 @@ $(".single-toggle.toggle").on("click", function () {
 });
 
 makeItRain();
-
-
-</script>
